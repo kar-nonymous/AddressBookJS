@@ -491,4 +491,8 @@
     // UC 9
     // View person with particular city or state
     addressBookArr.filter(addressBookContacts => addressBookContacts._city.includes("Agra")).forEach(addressBookContacts => console.log("UC 9-----" + addressBookContacts.firstName));
+
+    // UC 10
+    let cityCount = addressBookArr.filter((addressBookContacts) => addressBookContacts._city.includes("Agra")).reduce((count) => count+1,0);
+    console.log("UC 10----- City count: " + cityCount);
 }
