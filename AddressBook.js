@@ -487,4 +487,8 @@
     // UC 8
     // Search person with particular city or state
     addressBookArr.filter(addressBookContacts => addressBookContacts._city.includes("Agra")).forEach(addressBookContacts => console.log("UC 8-----" + addressBookContacts.firstName));
+
+    // UC 9
+    // View person with particular city or state
+    addressBookArr.filter(addressBookContacts => addressBookContacts._city.includes("Agra")).forEach(addressBookContacts => console.log("UC 9-----" + addressBookContacts.firstName));
 }
