@@ -479,4 +479,8 @@
     {
         console.log(addressBookArr[i]);
     }
+    // UC 6 
+    // Contacts count from array
+    let count = addressBookArr.reduce((count) => count+1,0);
+    console.log("No. of contacts: "+count);
 }
