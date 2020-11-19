@@ -353,10 +353,8 @@
     addressBookArr.push(addressBookContacts);
     for(let i=0; i<addressBookArr.length; i++)
     {
-        //find the contact using name
         if(addressBookArr[i]._firstName)
-        {  
-            //update address of the found contact    
+        {     
             addressBookArr[i]._zip = "281001";
             break;
         }        
