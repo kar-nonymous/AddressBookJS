@@ -502,4 +502,14 @@
     /// Stort by name
     let sortedArr = addressBookArr.sort((a,b)=>a.firstName.localeCompare(b.firstName));
     console.log("UC 11------ Sorted array by name: " + sortedArr.toString());
+
+    // UC12 
+    // Stort by city, state and zip
+    console.log("UC 11 ----- Sorting by city, state and zip")
+    let sortByState = addressBookArr.sort((a,b)=>a.state.localeCompare(b.state));
+    console.log(sortByState.toString());
+    let sortByCity = addressBookArr.sort((a,b)=>a.city.localeCompare(b.city));
+    console.log(sortByCity.toString());
+    let sortByZip = addressBookArr.sort((a,b)=>(a.zip>b.zip)?1:(b.zip>a.zip)?-1:0);
+    console.log(sortByZip.toString());
 }
