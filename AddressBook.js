@@ -465,6 +465,8 @@
     let addressBookContacts = new AddressBookContacts("Kumar", "Kartikeya", "Techman City", "Agra", "Uttar Pradesh", "281006", "7206183244", "kumar.kartikeya@capgemini.com");
     addressBookArr.push(addressBookContacts);
     addressBookArr.push(new AddressBookContacts("Shashank", "Singh", "Techman City", "Agra", "Uttar Pradesh", "281006", "8265800789", "shashank.singh@gmail.com"));
+    addressBookArr.push(new AddressBookContacts("Nitigya", "Kumar", "Techman City", "Agra", "Uttar Pradesh", "281006", "9410884202", "nitigya.kumar@gmail.com"));
+
     for(let i=0; i<addressBookArr.length; i++)
     {
         if(addressBookArr[i]._firstName == "Shashank")
@@ -495,4 +497,9 @@
     // UC 10
     let cityCount = addressBookArr.filter((addressBookContacts) => addressBookContacts._city.includes("Agra")).reduce((count) => count+1,0);
     console.log("UC 10----- City count: " + cityCount);
+
+    // UC11
+    /// Stort by name
+    let sortedArr = addressBookArr.sort((a,b)=>a.firstName.localeCompare(b.firstName));
+    console.log("UC 11------ Sorted array by name: " + sortedArr.toString());
 }
